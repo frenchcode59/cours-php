@@ -1,15 +1,20 @@
 <?php
+
 namespace App;
 
 use PDO;
-class Database {
-    protected $pdo;
 
-    public function __construct(){
-        $this->pdo = new PDO("mysql:host=localhost;dbname=courscrud","root","Anisoara1990@");
-    }
+class Database
+{
+  protected $pdo;
 
-    public function getPdo(){
-        return $this->pdo;
-    }
+  public function __construct()
+  {
+    $this->pdo = new PDO("mysql:host=localhost;dbname=bibliotheque", "root", "Anisoara1990@");
+  }
+
+  public function getPdo()
+  {
+    return $this->pdo;
+  }
 }

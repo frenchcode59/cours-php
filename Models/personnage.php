@@ -1,30 +1,82 @@
 <?php
+
 namespace App\Models;
 
 
-class perso{
-    private $id;
-    private $name;
+class personnage
+{
+  private $id;
+  private $name;
 
-    public function __construct(){
-        
-    }
+  private $classe;
 
-    public function getId(){
-        return $this->id;
-    }
+  private $race;
 
-    public function getName(){
-        return $this->name;
-    }
+  private $attaque;
 
-    public function setId($id){
-        $this->id=$id;
-    }
+  private $defense;
 
-    public function setName($name){
-        $this->name=$name;
-    }
+  public function __construct()
+  {
+  }
 
-    
+  public function getId()
+  {
+    return $this->id;
+  }
+
+  public function getName()
+  {
+    return $this->name;
+  }
+
+  public function getClasse()
+  {
+    return $this->classe;
+  }
+
+  public function getRace()
+  {
+    return $this->race;
+  }
+
+  public function getAttaque()
+  {
+    return $this->attaque;
+  }
+
+  public function getDefense()
+  {
+    return $this->defense;
+  }
+
+  public function setId($id)
+  {
+    $this->id = $id;
+  }
+
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+
+  public function setClasse($classe)
+  {
+    $this->classe = $classe;
+  }
+
+  public function setRace($race)
+  {
+    $this->race = $race;
+  }
+
+  public function setAttaque($attaque)
+  {
+    $this->attaque = $attaque;
+  }
+
+  public function setDefense($defense)
+  {
+    $this->defense = $defense;
+  }
 }
