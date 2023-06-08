@@ -3,7 +3,7 @@
 namespace App\Models;
 
 require_once 'Database.php';
-require_once 'Models/perso.php';
+require_once 'Models/personnage.php';
 
 use App\Database;
 
